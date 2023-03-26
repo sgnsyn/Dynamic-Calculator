@@ -68,7 +68,7 @@ body {
   background-color: var(--color-body);
   position: relative;
 }
-body::before {
+/* body::before {
   content: "Site Under Construction";
   text-transform: uppercase;
   color: rgb(74, 153, 218);
@@ -77,7 +77,7 @@ body::before {
   left: 50%;
   transform: translate(-50%, 4vh);
   font-weight: var(--font-weight-one);
-}
+} */
 
 /* KindOfNav */
 .kindOfNav {
