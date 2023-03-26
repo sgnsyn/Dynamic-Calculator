@@ -557,6 +557,7 @@ input:focus {
     padding: 0;
     height: 22rem;
     transition: all 0.3s ease-in-out;
+    display:none;
   }
   .optionsContainer .option {
     font-size: 1.125rem;
@@ -565,6 +566,7 @@ input:focus {
 
   .optionsContainer.active {
     transform: translate(-2vh, 0);
+    display:flex;
   }
   .optionsContainer.active::backdrop {
     backdrop-filter: initial;
