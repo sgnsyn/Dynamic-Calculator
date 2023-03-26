@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Test</title>
+  </head>
+  <body style="font-family: Montserrat">
+    <div class="kindOfNav">
+      <div class="darkContainer">
+        <p class="darkText">Light</p>
+        <button class="darkBtn"></button>
+      </div>
+      <button class="optionPhone">
+        <div class="humberger humberger1"></div>
+        <div class="humberger humberger2"></div>
+        <div class="humberger humberger3"></div>
+      </button>
+    </div>
+
+    <div class="calculatorContainer">
+      <div class="optionsContainer backdropEffect">
+        <p class="mainOptions option" data-value="bmi">BMI CALCULATOR</p>
+        <p class="mainOptions option" data-value="conv">UNIT CONVERSION</p>
+        <p class="mainOptions option" data-value="calc">STANDARD CALCULATOR</p>
+      </div>
+
+      <!-- This section Belongs to output Container -->
+
+      <div class="outputContainer">
+        <div class="output">0</div>
+      </div>
+      <div class="sectionsContainer">
+        <!-- This section Belongs to  Calculator Buttons -->
+
+        <div class="allCalculatorBtnContainer">
+          <div class="btnContainer btnContainerOps">
+            <button class="btn openb">(</button>
+            <button class="btn closeb">)</button>
+            <button class="btn tentox">
+              <div>10<sup>x</sup></div>
+            </button>
+            <button class="btn sqr">
+              <div>x<sup>2</sup></div>
+            </button>
+            <button class="btn fact">!x</button>
+            <button class="btn sqrt">&Sqrt;</button>
+            <button class="btn abs"><div>|x|</div></button>
+            <button class="btn euler">
+              <div>e<sup>x</sup></div>
+            </button>
+          </div>
+
+          <div class="btnContainer btnContainerNumArth">
+            <button class="btn 1">7</button>
+            <button class="btn 2">8</button>
+            <button class="btn 3">9</button>
+            <button class="btn +">+</button>
+            <button class="btn 4">4</button>
+            <button class="btn 5">5</button>
+            <button class="btn 6">6</button>
+            <button class="btn -">-</button>
+            <button class="btn 7">1</button>
+            <button class="btn 0">2</button>
+            <button class="btn 8">3</button>
+            <button class="btn x">x</button>
+            <button class="btn 9">.</button>
+            <button class="btn 9">0</button>
+            <button class="btn 9">=</button>
+            <button class="btn /">/</button>
+          </div>
+
+          <div class="btnContainer btnContainerAC">
+            <button class="btn ac">AC</button>
+            <button class="btn cl">&laquo;</button>
+            <button class="btn log">log</button>
+            <button class="btn ln">ln</button>
+          </div>
+        </div>
+
+        <!-- This section Belongs to Unit convertor -->
+
+        <div class="unitConversionContainer">
+          <div
+            class="unitsContainer backdropEffect unitConversionContainerUnitsContainer"
+          ></div>
+
+          <div class="untisContainerPhone">
+            <p class="unitText otherResult">Unit</p>
+            <button class="unitSelect parentUnitSelect">
+              <p class="parentUnitSelectText">weight and mass</p>
+              <span class="unitSelectCustomBtn"></span>
+            </button>
+          </div>
+
+          <div class="resutlsContianer">
+            <div class="resultInputOutput resultInputOutput1">
+              <input type="number" class="result result1" placeholder="0" />
+
+              <button
+                class="unitSelect unitSelect1 ChildUnitSelect ChildUnitSelect1"
+              >
+                <span>Kilograms</span>
+                <span class="unitSelectCustomBtn"></span>
+                <!-- write for feet and pounds and what not -->
+                <div
+                  class="childUnitContainer childUnitContainer1 backdropEffect Top unitConversionResultTop unitConversionResult"
+                ></div>
+              </button>
+            </div>
+            <div class="resultInputOutput resultInputOutput2">
+              <input type="number" class="result result2" placeholder="0" />
+
+              <button
+                class="unitSelect unitSelect2 ChildUnitSelect ChildUnitSelect2"
+              >
+                <span>Meters</span>
+                <span class="unitSelectCustomBtn"></span>
+                <!-- write for feet and pounds and what not -->
+                <div
+                  class="childUnitContainer childUnitContainer2 backdropEffect unitConversionResultBottom unitConversionResult"
+                ></div>
+              </button>
+            </div>
+
+            <div class="otherResult">
+              <p class="aboutEquals">Also Equals</p>
+              <div class="threeOtherUnits">
+                <div class="otherUnit otherUnit">1.09 Yd</div>
+                <div class="otherUnit otherUnit">3.28 ft</div>
+                <div class="otherUnit otherUnit">5.36 hands</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- This section Belongs to BMI  -->
+
+        <div class="bmiContainer">
+          <div class="resultInputOutput resultInputOutput2">
+            <p class="unitText otherResult">Height</p>
+
+            <input
+              type="number"
+              class="result result2 inputHeight"
+              placeholder="167"
+            />
+
+            <button
+              class="unitSelect unitSelect2 ChildUnitSelect ChildUnitSelect4"
+            >
+              <span>Meters</span>
+              <span class="unitSelectCustomBtn"></span>
+              <!-- write for feet and pounds and what not -->
+              <div
+                class="childUnitContainer childUnitContainer4 backdropEffect bmiResultHeight"
+              ></div>
+            </button>
+          </div>
+          <div class="resultInputOutput resultInputOutput1">
+            <p class="unitText otherResult">Mass</p>
+
+            <input
+              type="number"
+              class="result result1 inputMass"
+              placeholder="52"
+            />
+
+            <button
+              class="unitSelect unitSelect1 ChildUnitSelect ChildUnitSelect3"
+            >
+              <span> Kilograms</span>
+              <span class="unitSelectCustomBtn"></span>
+              <!-- write for feet and pounds and what not -->
+              <div
+                class="childUnitContainer childUnitContainer3 backdropEffect Middle bmiResultMass"
+              ></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="unitsContainerBackdrop"></div>
+  </body>
+</html>
