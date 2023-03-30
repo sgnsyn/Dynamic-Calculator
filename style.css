@@ -5,7 +5,7 @@ html {
 :root {
   --font-weight-one: 700;
   --font-weight-two: 500;
-  --color-body: #f2f2f2;
+  /* --color-body: #f2f2f2; */
   --color-app: #e9e9e9;
   --color-three: #ffffff;
   --color-four: #000000;
@@ -557,7 +557,7 @@ input:focus {
     padding: 0;
     height: 22rem;
     transition: all 0.3s ease-in-out;
-    display:none;
+    display: none;
   }
   .optionsContainer .option {
     font-size: 1.125rem;
@@ -566,7 +566,7 @@ input:focus {
 
   .optionsContainer.active {
     transform: translate(-2vh, 0);
-    display:flex;
+    display: flex;
   }
   .optionsContainer.active::backdrop {
     backdrop-filter: initial;
